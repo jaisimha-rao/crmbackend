@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const { getCustomers, createCustomer } = require('../controllers/customersController');
+const {
+  getCustomers,
+  createCustomer
+} = require('../controllers/customersController');
 
-router.get('/', getCustomers);       // GET all customers
-router.post('/', createCustomer);    // CREATE new customer
+router.get('/', getCustomers);
+router.post('/', createCustomer);
 
 module.exports = router;
